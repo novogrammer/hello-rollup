@@ -1,0 +1,24 @@
+{
+  "name": "hello-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy": "cp ./src/index.html ./dist/",
+    "bundle": "rollup -c",
+    "build": "npm run copy && npm run bundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yusuke Kawamoto <novogrammer@gmail.com> (https://github.com/novogrammer/)",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.77.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0"
+  },
+  "dependencies": {
+    "three": "^0.143.0"
+  }
+}
