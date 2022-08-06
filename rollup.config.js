@@ -10,8 +10,6 @@ export default {
   },
   plugins: [
     nodeResolve({
-      mainFields:["jsnext:main"],
-      dedupe:["three"],
     }), // npmモジュールを`node_modules`から読み込む
     commonjs(), // CommonJSモジュールをES6に変換
     babel() // ES5に変換
